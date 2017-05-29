@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#fce4cb"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageButton
+        android:id="@+id/start"
+        android:scaleType="fitXY"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/start"
+        android:background="#fce4cb"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/list"
+        android:scaleType="fitXY"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/list"
+        android:background="#fce4cb"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/reset"
+        android:scaleType="fitXY"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/reset"
+        android:background="#fce4cb"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/start"
+        android:layout_toEndOf="@+id/start" />
+
+    <ImageButton
+        android:id="@+id/search"
+        android:scaleType="fitXY"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_search"
+        android:background="#fce4cb"
+        android:layout_below="@+id/gridview"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:textSize="50dp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:background="#fff"
+        android:textColorLink="?android:attr/panelColorBackground"
+        android:textColor="#000"
+        android:layout_below="@+id/gridview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/clear"
+        android:layout_toStartOf="@+id/clear" />
+
+    <ImageButton
+        android:id="@+id/clear"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/clear"
+        android:scaleType="fitXY"
+        android:background="#fce4cb"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/noWord"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:textSize="30dp"
+        android:background="#fff"
+        android:textColorLink="?android:attr/panelColorBackground"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnWidth="500dp"
+        android:numColumns="4"
+        android:gravity="center"
+        android:background="#fce4cb"
+        android:layout_below="@+id/start"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
