@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
             toast.show();
         }
 
-
         setContentView(R.layout.activity_main);
         Button button = (Button) findViewById(R.id.startButton);
         button.setOnClickListener(

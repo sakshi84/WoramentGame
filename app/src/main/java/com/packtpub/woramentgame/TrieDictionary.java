@@ -15,6 +15,7 @@ import java.io.InputStreamReader;
 
 public class TrieDictionary {
 
+
     public TrieNode root;
     int MIN_WORD_LENGTH=3;
 
